@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!-- REQUIRED META TAGS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="./cafe.css">
+
+    <title>Tuxedo Cat Coffee</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.png" alt="Tuxedo Cat Coffee">
+    </header>
+
+    <main>
+        <form id="order_form" name="order_form" action="checkout.html" method="get">
+            <!-- MENU -->
+            <section id="menu">
+                <h2>Menu</h2>
+                <p>Click an item to add it to your order.</p>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/espresso.jpg" id="./images/espresso_info.jpg" alt="Espresso">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/latte.jpg" id="./images/latte_info.jpg" alt="Latte">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/cappuccino.jpg" id="./images/cappuccino_info.jpg" alt="Cappuccino">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/coffee.jpg" id="./images/coffee_info.jpg" alt="Coffee">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/biscotti.jpg" id="./images/biscotti_info.jpg" alt="Biscotti">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/scone.jpg" id="./images/scone_info.jpg" alt="Scone">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- ORDER "CART" -->
+            <section>
+                <h2>Your Order</h2>
+                <section>
+                    <select id="order" name="order" size="6"></select>
+                    <p id="total">&nbsp;</p>
+                </section>
+
+                <section id="buttons">
+                    <input type="button" id="place_order" name="place_order" value="Place Order">
+                    <input type="button" id="clear_order" name="clear_order" value="Clear Order">
+                </section>
+            </section>
+        </form>
+    </main>
+
+    <!-- Javascripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./jscripts/coffee.js"></script>
+</body>
+</html>
