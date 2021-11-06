@@ -10,7 +10,7 @@ const focusAndSelect = selector => {
     elem.select();
 };
 
-const calculateMPG = (miles, gallons) => (miles / gallons).toFixed();
+const calculateMPG = (miles, gallons) => (miles / gallons).toFixed(1);
 
 const processEntries = () => {
     const miles = parseFloat($("#miles").value);
@@ -23,7 +23,7 @@ const processEntries = () => {
         alert(getErrorMsg("Gallons of gas used"));
         focusAndSelect("#gallons");
     } else {
-        $("#mpg").value = calculateMpg(miles / gallons);
+        $("#mpg").value = calculateMPG(miles, gallons);
     }
 };
 

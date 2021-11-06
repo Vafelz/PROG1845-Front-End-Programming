@@ -7,12 +7,12 @@ body {
     padding: 0 2em 1em;
 }
 
-h1 {
-    color: blue;
-}
-
 div {
     margin-bottom: 1em;
+}
+
+h1 {
+    color: blue;
 }
 
 label {
