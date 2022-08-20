@@ -1,18 +1,16 @@
 "use strict"
 
-const allInputs = document.querySelectorAll('input[type="text"]')
-
-function validateInputs() {
-	
-}
-
 $(document).ready( () => {
 	const emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/
+	const userEmail = $('#email').val()
+
 	$('#arrival_date').focus()
-	$('#submit').click(() => {
-		for (let i = 0; i < allInputs; i++) {
-			const inputs = allInputs[i]
-			alert(inputs)
-		}
+	$('form').serialize()
+	$('#submit').click(function() {
+		// Check all text boxes
+		for ()
+		$('input[type=text]')
+
+		alert(userEmail)
 	})
-}); // end ready
+}) // end ready
